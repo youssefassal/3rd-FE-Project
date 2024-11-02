@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+}
+a{text-decoration: none;}
+li{list-style-type: none;}
+body{
+    background-color: black !important;
+    height: 8000px;
+}
+.navbar{background-color: black !important;}
+.carousel-caption{
+    background-color: rgba(255, 0, 0, 0.315);
+    border-radius: 10px;
+}
+.form-check-input:checked {
+    background-color: red;
+    border-color: red;
+}
+.bgred{background-color: rgb(226, 31, 48) !important;}
+.bggray{background-color: #18151f;}
+.textred{color: rgb(226, 31, 48) !important;}
+.bgblack{background-color: black !important;}
+.static-pic{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/piccc.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.static-pic2{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/picscs.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card{
+    border: none;
+    overflow:hidden;
+    border-radius:20px;
+    min-height:450px;
+    &.card-has-bg{
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-position: center center;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            filter: grayscale(100%);
+        }
+        &:hover {
+            transform: scale(0.9);
+            background-size:130%;
+            .card-img-overlay {background: linear-gradient(0deg, rgba(255, 33, 33, 0.5) 50%, rgb(255, 33, 33) 100%);}
+        }
+    }
+    .card-footer{
+        border-top: none;
+        .media{img{border:solid 3px rgba(255,255,255,0.3);}}
+    }
+    .card-body{transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);}
+    &:hover {
+        .card-body{
+            margin-top:30px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        cursor: pointer;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: linear-gradient(0deg, rgba(255, 33, 33, 0.379) 100%, rgb(255, 33, 33) 100%);
+    }
+}
+.postcard {
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    &.dark {background-color: #18151f;}
+    &.light {background-color: #e1e5ea;}
+    .t-dark {color: #18151f;}
+    a {color: inherit;}
+    h1,	.h1 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .small {font-size: 80%;}
+    .postcard__title {font-size: 1.75rem;}
+    .postcard__img {
+        max-height: 180px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+    .postcard__img_link {display: contents;}
+    .postcard__bar {
+        width: 50px;
+        height: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: rgb(226, 31, 48);
+        transition: width 0.2s ease;
+    }
+    .postcard__text {
+        padding: 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .postcard__preview-txt {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+        height: 100%;
+    }
+    .postcard__tagbox {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 14px;
+        margin: 20px 0 0 0;
+        padding: 0;
+        justify-content: center;
+  
+        .tag__item {
+            display: inline-block;
+            background: rgba(83, 83, 83, 0.4);
+            border-radius: 3px;
+            padding: 2.5px 10px;
+            margin: 0 5px 5px 0;
+            cursor: default;
+            user-select: none;
+            transition: background-color 0.3s;
+            &:hover {background: rgba(83, 83, 83, 0.8);}
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(-70deg, #424242, transparent 50%);
+        opacity: 1;
+        border-radius: 10px;
+    }
+    &:hover .postcard__bar {width: 100px;}
+}
+@media screen and (min-width: 769px) {
+    .postcard{
+        flex-wrap: inherit;
+        .postcard__title {font-size: 2rem;}
+        .postcard__tagbox {justify-content: start;}
+        .postcard__img {
+            max-width: 300px;
+            max-height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .postcard__text {
+            padding: 3rem;
+            width: 100%;
+        }
+        .media.postcard__text:before {
+            content: "";
+            position: absolute;
+            display: block;
+            background: #18151f;
+            top: -20%;
+            height: 130%;
+            width: 55px;
+        }
+        &:hover .postcard__img {transform: scale(1.1);}
+        &:nth-child(2n+1) {flex-direction: row;}
+        &:nth-child(2n+0) {flex-direction: row-reverse;}
+        &:nth-child(2n+1) .postcard__text::before {
+            left: -12px !important;
+            transform: rotate(4deg);
+        }
+        &:nth-child(2n+0) .postcard__text::before {
+            right: -12px !important;
+            transform: rotate(-4deg);
+        }
+    }
+}
+.link-box{
+    box-shadow: 0px 0px 10px 3px rgb(226, 31, 48);
+    width: 250px;
+}
+.trans:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: red;
+    opacity: 0.3;
+}
+.trans:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+.trans:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    opacity: 0.3;
+}
+.trans:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+.footer-btn:hover{opacity: .5;}

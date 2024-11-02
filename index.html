@@ -1,0 +1,577 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/Style.css">
+        <title>Assal</title>
+    </head>
+    <body>
+        <!-- login Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label text-danger">Email address</label>
+                                  <input type="email" class="form-control border-danger" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label text-danger">Password</label>
+                                  <input type="password" class="form-control border-danger" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label text-danger" for="flexSwitchCheckDefault">Remember me</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Login</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- header -->
+        <nav class="navbar navbar-expand-lg navbar-light border border-secondary fixed-top">
+            <div class="container-fluid ">
+                <img src="images/logo.png" alt="" width="50" height="50" class="rounded-circle">
+                <a class="navbar-brand text-light mx-2" href="#">Sentinels</a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Partners</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light border rounded border-danger" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teams
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-danger" href="#">Valorant</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Apex Legends</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Halo</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">League of Legends</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">More</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3">
+                        <input class="form-control me-4 border-danger" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                        <button class="btn btn-outline-danger mx-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- home -->
+        <div id="carouselExampleCaptions" class="carousel slide vh-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner vh-100">
+              <div class="carousel-item active vh-100">
+                <img src="images/Capture.PNG" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>2024 Authentic Pro Jersey [Backordered until November 2024]</h5>
+                  <p>69.99$</p>
+                  <button class="btn btn-danger text-light">VIEW PRODUCT</button>
+                </div>
+              </div>
+              <div class="carousel-item vh-100">
+                <img src="images/slide2.PNG" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Gun Buddy Keychain</h5>
+                  <p>10.00$</p>
+                  <button class="btn btn-danger text-light">VIEW PRODUCT</button>
+                </div>
+              </div>
+              <div class="carousel-item vh-100">
+                <img src="images/slide3.PNG" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Sentinels Light Stick</h5>
+                  <p>25.00$</p>
+                  <button class="btn btn-danger text-light">VIEW PRODUCT</button>
+                </div>
+              </div>
+              <div class="carousel-item vh-100">
+                <img src="images/slide4.PNG" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Revenge of the Cat Girl Tee</h5>
+                  <p>29.00$</p>
+                  <button class="btn btn-danger text-light">VIEW PRODUCT</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <i class="fas fa-angle-double-left fs-4 textred"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <i class="fas fa-angle-double-right fs-4 textred"></i>
+                <span class="visually-hidden ">Next</span>
+            </button>
+        </div>
+
+        <!-- links right -->
+        <div class="icons position-fixed top-50 end-0 me-5">
+            <a href=""><i class="fab fa-facebook-square textred fs-1 d-block py-3"></i></a>
+            <a href=""><i class="fab fa-whatsapp-square textred fs-1 d-block py-3"></i></a>
+            <a href=""><i class="fab fa-twitter-square textred fs-1 d-block py-3"></i></a>
+            <a href=""><i class="fab fa-discord textred fs-1 d-block py-3"></i></a>
+            <a href=""><i class="fab fa-instagram-square textred fs-1 d-block py-3"></i></a>
+        </div>
+
+        <!-- Welcome -->
+        <div class="bg-danger border border-danger rounded p-4 bgred">
+            <h1 class="text-light">Welcome</h1>
+            <p class="text-light">Sentinels is an American esports organization based in Los Angeles, California. The organization was founded as the League of Legends team Phoenix1 and competed in the North American League of Legends Championship Series. In June 2018, Phoenix1 rebranded to Sentinels.</p>
+            <button class="btn btn-dark">Learn More</button>
+        </div>
+
+        <hr class="text-light">
+
+        <!-- Active team header -->
+        <div class="bg-danger border border-danger rounded p-5 bgred">
+            <h2 class="text-center text-light">Our Active Teams</h2>
+        </div>
+
+        <!-- Active teams -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item my-2">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bgblack text-light border border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Valorant Team
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bgred">Players: zekken, johnqt, Zellsis, N4RRATE, bang, reduxx. <br> Head Coach: Adam "kaplan" Kaplan </div>
+              </div>
+            </div>
+
+            <div class="accordion-item my-2">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bgblack text-light border border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    League Of Legends Team
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bgred">Players: Derek "zig" Shao, Rami "Inori" Charagh, Sang-ook "Ryu" Yoo, Dong-hyeon "Arrow" No, Adrian "Adrian" Ma. <br> Head Coach: - </div>
+              </div>
+            </div>
+
+            <div class="accordion-item my-2">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bgblack text-light border border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Halo Team
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bgred">Players: LethuL, Spartan, bubu dubu, Falcated. <br> Head Coach: Kyle "Chig" Lawson</div>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Massages -->
+        <section>
+            <hr class="text-light">
+
+            <div class="bg-danger border border-danger rounded p-2 bgred">
+                <h2 class="text-center text-light">Send Us A Message</h2>
+            </div>
+
+            <div class="bggray rounded p-4">
+                <h4 class="text-light">Write Your <code class="textred fs-2">Message</code> Here</h4>
+                <button type="button" class="btn btn-danger send0" data-bs-toggle="tooltip" data-bs-placement="right" title="Send Message">Send</button>
+                <div class="mb-0 mt-3">
+                    <textarea class="form-control" placeholder="Write here..." id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+
+            <hr class="text-light">
+
+            <div class="bg-danger border border-danger rounded p-2 bgred">
+                <h2 class="text-center text-light">Send Us A Message</h2>
+            </div>
+
+            <div class="bggray rounded p-4">
+                <h4 class="text-light">Write Your <code class="textred fs-2">Message</code> Here</h4>
+                <button type="button" class="btn btn-danger send1" data-bs-toggle="tooltip" data-bs-placement="right" title="Send Message">Send</button>
+                <div class="mb-0 mt-3">
+                    <textarea class="form-control" placeholder="Write here..." id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+
+            <hr class="text-light">
+
+            <div class="bg-danger border border-danger rounded p-2 bgred">
+                <h2 class="text-center text-light">Send Us A Message</h2>
+            </div>
+
+            <div class="bggray rounded p-4">
+                <h4 class="text-light">Write Your <code class="textred fs-2">Message</code> Here</h4>
+                <button type="button" class="btn btn-danger send2" data-bs-toggle="tooltip" data-bs-placement="right" title="Send Message">Send</button>
+                <div class="mb-0 mt-3">
+                    <textarea class="form-control" placeholder="Write here..." id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- static pic -->
+        <hr class="text-light">
+        <div class="static-pic"></div>
+        <hr class="text-light">
+
+        <!-- Roaster title -->
+        <div class="bg-danger border border-danger rounded p-2 bgred">
+            <h2 class="text-center text-light">Valorant Roster</h2>
+        </div>
+
+        <!-- roster cards -->
+        <div class="container">
+            <div class="row mt-5 gap-5">
+                
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 bggray trans">
+                    <img src="images/Zekken.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">ZEKKEN</h5>
+                    <p class="card-text text-light">A true prodigy in the Valorant scene. Zekken stunned the world by being one of the best players anyone had ever seen while simultaneously being in the 4th grade.</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mx-auto bggray trans">
+                    <img src="images/john.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">JOHNQT</h5>
+                    <p class="card-text text-light">The brains behind the Sentinels Valorant team. On top of speaking 5 languages, he's an IGL who can frag out. - his real name isn't John.</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 bggray trans">
+                    <img src="images/Narrat.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">N4RRATE</h5>
+                    <p class="card-text text-light">N4RRATE made a name for himself as a top-tier player while competing with one of the strongest teams in the EMEA region. Now, he’s back home.</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 bggray trans">
+                    <img src="images/bang.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">BANG</h5>
+                    <p class="card-text text-light">Regarded as one of the best Controller players North America has ever witnessed, bang is now set to bring his expertise and precision to Sentinels</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mx-auto bggray trans">
+                    <img src="images/Zillsis.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">ZELLSIS</h5>
+                    <p class="card-text text-light">An unmistakable force in the world of Valorant. Zellsis joined our team this offseason against our will.</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 bggray trans">
+                    <img src="images/redux.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">REDUXX</h5>
+                    <p class="card-text text-light">Considered the future of Valorant, reduxx is Sentinels' 6th player. Due to his age, he is still unable to compete in VCT</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mx-auto bggray trans">
+                    <img src="images/kap.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">KAPLAN</h5>
+                    <p class="card-text text-light">joined Sentinels as a head coach in 2023, playing a crucial role in revitalizing the team's performance.</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mx-auto bggray trans">
+                    <img src="images/gunter.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textred">GUNTER</h5>
+                    <p class="card-text text-light">joined the Sentinels Valorant team as an assistant coach for the 2025 VCT season</p>
+                    <a href="#" class="btn btn-primary bgred border-danger">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="text-light">
+        <div class="static-pic2"></div>
+        <hr class="text-light">
+
+        <div class="bg-danger border border-danger rounded p-2 bgred">
+            <h2 class="text-center text-light">Content Creators</h2>
+        </div>
+
+        <!-- content creators cards -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="card col-12 col-sm-6 col-md-6 col-lg-3 text-dark card-has-bg click-col" style="background-image:url('images/tenz.PNG');">
+                    <img class="card-img d-none" src="images/tenz.PNG" alt="">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <h5 class="card-title mt-0"><a class="text-light" herf="">All Thanks And Appreciation</a></h5>
+                            <small class="text-light"><i class="far fa-clock"></i> October 15, 2020</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="images/tenz.PNG" alt="" style="max-width:100px">
+                                <div class="media-body">
+                                    <h5 class="my-0 d-block text-light">Tyson "Tenz" Ngo</h5>
+                                    <small class="text-light">The face of Valorant, EX-Pro Player</small>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="card col-12 col-sm-6 col-md-6 col-lg-3 text-dark card-has-bg click-col mx-auto" style="background-image:url('images/tarik.PNG');">
+                    <img class="card-img d-none" src="images/tenz.PNG" alt="">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <h5 class="card-title mt-0"><a class="text-light" herf="">All Thanks And Appreciation</a></h5>
+                            <small class="text-light"><i class="far fa-clock"></i> October 15, 2020</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="images/tarik.PNG" alt="Generic placeholder image" style="max-width:100px">
+                                <div class="media-body">
+                                    <h5 class="my-0 d-block text-light">Tyson "Tenz" Ngo</h5>
+                                    <small class="text-light">The face of Valorant, EX-Pro Player</small>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="card col-12 col-sm-6 col-md-6 col-lg-3 text-dark card-has-bg click-col" style="background-image:url('images/daph.PNG');">
+                    <img class="card-img d-none" src="images/tenz.PNG" alt="">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <h5 class="card-title mt-0"><a class="text-light" herf="">All Thanks And Appreciation</a></h5>
+                            <small class="text-light"><i class="far fa-clock"></i> October 15, 2020</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="images/daph.PNG" alt="Generic placeholder image" style="max-width:100px">
+                                <div class="media-body">
+                                    <h5 class="my-0 d-block text-light">Tyson "Tenz" Ngo</h5>
+                                    <small class="text-light">The face of Valorant, EX-Pro Player</small>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div> 
+            </div>
+        </div>
+
+        <hr class="text-light mt-5">
+        <div class="bg-danger border border-danger rounded p-2 bgred">
+            <h2 class="text-center text-light">News</h2>
+        </div>
+
+        <!-- news -->
+        <div class="container mt-5">
+            <article class="postcard dark blue">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="images/kaplan news.jpeg" alt="" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a href="#">Sentinels Retain kaplan as Head Coach for 2025 VCT Season</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>SEP 27th 2024
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Today, Sentinels announced via their X account that they have "locked in" Adam "kaplan" Kaplan as the head coach for the 2025 VCT season. Kaplan has been instrumental in shaping Sentinels' competitive resurgence since joining the organization, and his retention signals the team's confidence in his leadership for another year.</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Post</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                        <li class="tag__item play blue">
+                            <a href="#"><i class="fas fa-play mr-2"></i>Read More</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="postcard dark red">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="images/tenz.PNG" alt="" />	
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title red"><a href="#">Sentinels superstar TenZ retires from Valorant pro play</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>SEP 27th 2024
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">TenZ is someone who has defined Valorant’s competitive history from the very days it started. His time with Sentinels has made him one of the biggest names in the game, someone who had millions of fans and won multiple international titles. However, he suddenly announced that he’s retiring from pro play.</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Post</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                        <li class="tag__item play red">
+                            <a href="#"><i class="fas fa-play mr-2"></i>Read More</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="postcard dark blue">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="images/News3.png" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a href="#">A Championship pairing: Sentinels announces gaming chair sponsorship with Razer</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>JUN 12th 2024
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Los Angeles, California - North American organization Sentinels is excited to share its year-long partnership with Razer, the world’s leading lifestyle brand for gamers. With this partnership, the Razer Iskur V2 gaming chair is now the official gaming chair for Sentinels.</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Post</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                        <li class="tag__item play blue">
+                            <a href="#"><i class="fas fa-play mr-2"></i>Read More</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="postcard dark red">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="images/trofy.jpg" alt="" />	
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title red"><a href="#">Sentinels victorious at AfreecaTV VALORANT League tournament following 3-0 Grand Finals victory against VCT Champions runners-up Paper Rex</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>Dec 13th 2023
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Seoul, South Korea - North American organization Sentinels has continued its ten-game off-season unbeaten streak following a Championship win at the AfreecaTV VALORANT league tournament, which saw Sentinels take down the runners-up of Champions 2023, Paper Rex, 3-0 in the grand final.</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Post</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                        <li class="tag__item play red">
+                            <a href="#"><i class="fas fa-play mr-2"></i>Read More</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <hr class="text-light">
+        <div class="bg-danger border border-danger rounded p-2 bgred">
+            <h2 class="text-center text-light">Join Us</h2>
+        </div>
+        
+        <!-- links -->
+        <div class="container mt-5">
+            <div class="row gap-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ms-3 text-center rounded p-4 link-box">
+                    <h1 class="text-light">Follow</h1>
+                    <a href=""><img src="images/x.png" alt="" width="100px" class="border"></a>
+                    <h2 class="text-light">go to link</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ms-5 text-center rounded p-4 link-box">
+                    <h1 class="text-light">Follow</h1>
+                    <a href=""><img src="images/disco.png" alt="" width="100px"></a>
+                    <h2 class="text-light">go to link</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ms-5 text-center rounded p-4 link-box">
+                    <h1 class="text-light">Follow</h1>
+                    <a href=""><img src="images/Instagram.png" alt="" width="100px"></a>
+                    <h2 class="text-light">go to link</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ms-5 text-center rounded p-4 link-box">
+                    <h1 class="text-light">Follow</h1>
+                    <a href=""><img src="images/twitch.png" alt="" width="100px"></a>
+                    <h2 class="text-light">go to link</h2>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light">
+
+        <!-- footer -->
+        <div class="container-fluid">
+            <div class="row bggray">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 bggray text-center">
+                    <hr class="text-light mt-5">
+                    <img src="images/logo.png" alt="" class="border border-3 border-danger rounded-circle" width="70">
+                    <h2 class="text-light d-inline">Company</h2>
+                    <hr class="text-light">
+                    <h6 class="text-light"><span class="textred">Phone:</span> 000-000-000</h6>
+                    <h6 class="text-light"><span class="textred">Address:</span> LA,USA</h6>
+                    <h6 class="text-light"><span class="textred">Email:</span> Sentinelsgg@gmail.com</h6>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 bggray text-center">
+                    <hr class="text-light mt-5">
+                    <img src="images/tenz.PNG" alt="" class="border border-3 border-danger rounded-circle" width="70">
+                    <h2 class="text-light d-inline">Important Links</h2>
+                    <hr class="text-light">
+                    <a href="" class="textred footer-btn"><h6>Shop</h6></a>
+                    <a href="" class="textred footer-btn"><h6>Discord</h6></a>
+                    <a href="" class="textred footer-btn"><h6>Twitch</h6></a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 bggray text-center">
+                    <hr class="text-light mt-5">
+                    <img src="images/tenz.PNG" alt="" class="border border-3 border-danger rounded-circle" width="70">
+                    <h2 class="text-light d-inline">Shop</h2>
+                    <hr class="text-light">
+                    <h6 class="text-light">Jerseys</h6>
+                    <h6 class="text-light">Accessories</h6>
+                    <h6 class="text-light">Shirts</h6>
+                </div>
+                <hr class="text-light">
+                <h2 class="textred text-center">COPYRIGHT &copy; 2020 SENTINELS, GOOD ORG, ALL RIGHTS</h2>
+                <hr class="text-light">
+                <br><br><br>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
